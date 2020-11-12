@@ -14,11 +14,11 @@ INSERT INTO shares VALUES (1, Microsoft, 4, 4) [42122-200]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
-	at edu.oreluniver.java.h2stocks.repository.BaseTable.executeSqlStatement(BaseTable.java:33)
-	at edu.oreluniver.java.h2stocks.repository.Shares.addShare(Shares.java:26)
-	at edu.oreluniver.java.h2stocks.service.ShareService.addShare(ShareService.java:19)
-	at edu.oreluniver.java.h2stocks.StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
-	at edu.oreluniver.java.demo.Main.main(Main.java:11)
+	at BaseTable.executeSqlStatement(BaseTable.java:33)
+	at Shares.addShare(Shares.java:26)
+	at ShareService.addShare(ShareService.java:19)
+	at StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
+	at Main.main(Main.java:11)
 2020-11-12 13:16:00 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
 INSERT INTO shares VALUES (Microsoft, 4, 4) [21002-200]
@@ -34,11 +34,11 @@ INSERT INTO shares VALUES (Microsoft, 4, 4) [21002-200]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
-	at edu.oreluniver.java.h2stocks.repository.BaseTable.executeSqlStatement(BaseTable.java:33)
-	at edu.oreluniver.java.h2stocks.repository.Shares.addShare(Shares.java:26)
-	at edu.oreluniver.java.h2stocks.service.ShareService.addShare(ShareService.java:16)
-	at edu.oreluniver.java.h2stocks.StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
-	at edu.oreluniver.java.demo.Main.main(Main.java:11)
+	at BaseTable.executeSqlStatement(BaseTable.java:33)
+	at Shares.addShare(Shares.java:26)
+	at ShareService.addShare(ShareService.java:16)
+	at StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
+	at Main.main(Main.java:11)
 2020-11-12 13:22:06 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "MICROSOFT" not found; SQL statement:
 INSERT INTO shares VALUES (Microsoft, 1, 4, 4) [42122-200]
@@ -55,11 +55,11 @@ INSERT INTO shares VALUES (Microsoft, 1, 4, 4) [42122-200]
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
-	at edu.oreluniver.java.h2stocks.repository.BaseTable.executeSqlStatement(BaseTable.java:33)
-	at edu.oreluniver.java.h2stocks.repository.Shares.addShare(Shares.java:26)
-	at edu.oreluniver.java.h2stocks.service.ShareService.addShare(ShareService.java:19)
-	at edu.oreluniver.java.h2stocks.StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
-	at edu.oreluniver.java.demo.Main.main(Main.java:11)
+	at BaseTable.executeSqlStatement(BaseTable.java:33)
+	at Shares.addShare(Shares.java:26)
+	at ShareService.addShare(ShareService.java:19)
+	at StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
+	at Main.main(Main.java:11)
 2020-11-12 13:23:33 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "STARTPRICE" not found; SQL statement:
 INSERT INTO shares (name, changeProbability, startPrice, delta) VALUES (Microsoft, 1, 4, 4) [42122-200]
@@ -81,11 +81,11 @@ INSERT INTO shares (name, changeProbability, startPrice, delta) VALUES (Microsof
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
-	at edu.oreluniver.java.h2stocks.repository.BaseTable.executeSqlStatement(BaseTable.java:33)
-	at edu.oreluniver.java.h2stocks.repository.Shares.addShare(Shares.java:26)
-	at edu.oreluniver.java.h2stocks.service.ShareService.addShare(ShareService.java:19)
-	at edu.oreluniver.java.h2stocks.StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
-	at edu.oreluniver.java.demo.Main.main(Main.java:11)
+	at BaseTable.executeSqlStatement(BaseTable.java:33)
+	at Shares.addShare(Shares.java:26)
+	at ShareService.addShare(ShareService.java:19)
+	at StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
+	at Main.main(Main.java:11)
 2020-11-12 13:24:15 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "MICROSOFT" not found; SQL statement:
 INSERT INTO shares (name, changeProbability, delta) VALUES (Microsoft, 1, 4) [42122-200]
@@ -102,11 +102,11 @@ INSERT INTO shares (name, changeProbability, delta) VALUES (Microsoft, 1, 4) [42
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
 	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
 	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
-	at edu.oreluniver.java.h2stocks.repository.BaseTable.executeSqlStatement(BaseTable.java:33)
-	at edu.oreluniver.java.h2stocks.repository.Shares.addShare(Shares.java:26)
-	at edu.oreluniver.java.h2stocks.service.ShareService.addShare(ShareService.java:19)
-	at edu.oreluniver.java.h2stocks.StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
-	at edu.oreluniver.java.demo.Main.main(Main.java:11)
+	at BaseTable.executeSqlStatement(BaseTable.java:33)
+	at Shares.addShare(Shares.java:26)
+	at ShareService.addShare(ShareService.java:19)
+	at StockExchangeDB.createTablesAndForeignKeys(StockExchangeDB.java:45)
+	at Main.main(Main.java:11)
 2020-11-12 13:27:17 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO SHARES (NAME, CHANGEPROBABILITY, DELTA) VALUES ('APPLE', 4, 4)SHARES[*]"; SQL statement:
 INSERT INTO shares (name, changeProbability, delta) VALUES ('APPLE', 4, 4)SHARES [42000-200]
@@ -121,4 +121,10 @@ org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-20
 2020-11-12 14:00:32 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
 2020-11-12 14:00:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:06:33 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:07:26 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:14:54 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
