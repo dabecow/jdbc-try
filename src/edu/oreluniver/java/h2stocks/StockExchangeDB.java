@@ -42,10 +42,10 @@ public class StockExchangeDB {
         // Создание внешних ключей (связt` между таблицами)
         shareRates.createForeignKeys();
         traiderShareActions.createForeignKeys();
-        shareService.addShare("Microsoft", 4, 1, 4);
+        shareService.addShare("Microsoft", 4, 4);
     }
 
-    public Shares getShares() {
-        return shares;
+    public String getShares() throws SQLException {
+        return shareService.getShares().toString();
     }
 }

@@ -110,3 +110,15 @@ INSERT INTO shares (name, changeProbability, delta) VALUES (Microsoft, 1, 4) [42
 2020-11-12 13:27:17 jdbc[4]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO SHARES (NAME, CHANGEPROBABILITY, DELTA) VALUES ('APPLE', 4, 4)SHARES[*]"; SQL statement:
 INSERT INTO shares (name, changeProbability, delta) VALUES ('APPLE', 4, 4)SHARES [42000-200]
+2020-11-12 13:57:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 13:59:16 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 13:59:21 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:00:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:00:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]
+2020-11-12 14:00:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-200]

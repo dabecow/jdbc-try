@@ -16,15 +16,23 @@ public class ShareService {
     this.id = 0;
   }
 
-  public void addShare(String name, int startPrice, int changeProbability, int delta) throws SQLException {
+  public void addShare(String name, int changeProbability, int delta) throws SQLException {
     id++;
-    shares.addShare(new Share(id, name, changeProbability, startPrice, delta));
+    shares.addShare(new Share(id, name, changeProbability, delta));
   }
 
   public ArrayList<Share> getShares() throws SQLException {
     ResultSet resultSet = shares.getShares();
-    while (resultSet.next()){
-      Share share = new Share(resultSet.getInt("ID"), resultSet.getString("NAME"), resultSet.getInt("CHANGEPROBABILITY"), resultSet.getInt("DELTA"))
+    ArrayList<Share> shares = new ArrayList<Share>();
+    try {
+      do {
+        shares.add(new Share(resultSet.getInt("ID"), resultSet.getString("NAME"),
+            resultSet.getInt("CHANGEPROBABILITY"), resultSet.getInt("DELTA")));
+      } while (resultSet.next());
+    } catch (Exception e) {
+
     }
+    return shares;
   }
+
 }
